@@ -1,0 +1,35 @@
+
+1) SELECT name FROM robots WHERE source='Star Wars';
+
+
+2) SELECT name FROM robots WHERE personality='anxious';
+
+
+3) SELECT * FROM recipes WHERE nut_free='true';
+
+
+4) SELECT name FROM recipes WHERE gluten_free='true' AND vegetarian='false';
+
+
+5) SELECT name FROM animals WHERE number_of_legs = (SELECT MAX(number_of_legs) from animals);
+
+
+6) SELECT name FROM board_games WHERE mins_to_play = (SELECT MIN(mins_to_play) from board_games);
+
+
+7) SELECT name FROM recipes WHERE minutes_required = (SELECT MAX(minutes_required) from recipes);
+
+
+8) SELECT name FROM robots WHERE name LIKE 'M%';
+
+
+9) SELECT COUNT(max_players) FROM board_games WHERE max_players < 7;
+
+
+10) SELECT name FROM animals WHERE egg_laying= 'true' AND swimming ='true';
+
+
+11) SELECT name FROM animals WHERE swimming='true' AND egg_laying ='false' AND flying='false';
+
+
+12) SELECT name FROM board_games WHERE max_players = (SELECT MAX(max_players)FROM board_games);
